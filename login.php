@@ -48,6 +48,6 @@ $pdo = new PDO($dsn, $dbusername, $dbpassword);
 		</form>
 	</body>
 	<footer>
-			By visiting <a href="index.php">Findur.com</a> you agree to our <a href="cookiepolicy.html" target="_blank">cookie policy</a>.
+			By visiting <a href="locate.php">Findur.com</a> you agree to our <a href="cookiepolicy.html" target="_blank">cookie policy</a>.
 	</footer>
 </html>

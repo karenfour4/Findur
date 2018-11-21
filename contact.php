@@ -21,7 +21,6 @@ $pdo = new PDO($dsn, $dbusername, $dbpassword);
 			<nav>
 					<ul>
 							<li><a href="home.php">Home</a></li>
-							<li><a href="contact.php">Contact Us</a></li>
 							<?php if ($_SESSION['logged-in'] == true){
 							?><li><a href="logout.php">Logout</a></li><?php
 					}else{?>

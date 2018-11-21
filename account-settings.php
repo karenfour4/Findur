@@ -30,7 +30,7 @@ $row = $stmt->fetch();
 						<li><a href="home.php">Home</a></li>
 						<li><a href="contact.php">Contact Us</a></li>
 						<?php if ($_SESSION['logged-in'] == true){
-						?><li><a href="logout.php">Logout</a></li><?php
+						?><li><a href="account-settings.php">Account Settings</a></li><li><a href="logout.php">Logout</a></li><?php
 				}else{?>
 						<li><a href="login.php">Login</a></li>
 						<li><a href="register.php">Register</a></li>
@@ -45,6 +45,7 @@ $row = $stmt->fetch();
 <form action="process-account.php" method="POST">
 	<p>userId: <?php echo($row["userId"]); ?></p>
 	<input type="hidden" value="<?php echo($row["userId"]); ?>" name="userId"/>
+	<!-- ADD USER PROFILE PICTURE -->
 	<p>First Name: <input type='text' name='firstName' value="<?php echo($row["firstName"]); ?>"/></p>
 	<p>Last Name: <input type='text' name='lastName' value="<?php echo($row["lastName"]); ?>"/></p>
 	<p>Phone: <input type='text' name='phone' value="<?php echo($row["doctorPhone"]); ?>"/></p>
