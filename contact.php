@@ -15,11 +15,12 @@ $pdo = new PDO($dsn, $dbusername, $dbpassword);
 		<meta charset="utf-8" />
 
 	</head>
+	<!-- HEADER GOES HERE -->
 	<header>
 			<img src = "images/logo.png" />
 			<nav>
 					<ul>
-							<li><a href="index.php">Home</a></li>
+							<li><a href="home.php">Home</a></li>
 							<li><a href="contact.php">Contact Us</a></li>
 							<?php if ($_SESSION['logged-in'] == true){
 							?><li><a href="logout.php">Logout</a></li><?php
@@ -55,7 +56,14 @@ $pdo = new PDO($dsn, $dbusername, $dbpassword);
 				<input type='submit'>
 		</form>
 	</body>
+	<!-- Footer GOES HERE -->
 	<footer>
-			By visiting <a href="index.php">Findur.com</a> you agree to our <a href="cookiepolicy.html" target="_blank">cookie policy</a>.
+			<p><a href="contact.php">Contact Us</a></p>
+			<p><a href="login.php">Login</a></p>
+			<p>By visiting <a href="index.php">Findur.com</a> you agree to our <a href="cookiepolicy.html" target="_blank">cookie policy</a></p>
+			<form method='post' action='process-newsletter.php'>
+				<p>Sign up for our newsletter</p>
+				<input type='email' name="email" placeholder="e.g. name@gmail.com"><input type='submit'>
+			</form>
 	</footer>
 </html>
