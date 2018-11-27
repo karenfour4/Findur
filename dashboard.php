@@ -57,9 +57,22 @@ $stmt->execute();
 		</form>
 		<br>
 		<div id="txtHint"><b>Patient info will be listed here.</b></div>
+
+		<div>
+			<p><a href="#">+</a></p>
+			<p><a href="#">Locate Firstname</a></p>
+			<p><a href="#">9-1-1</a></p>
+		</div>
+
 		<script src="js/main.js"></script>
-		
 	</body>
 </html>
 
 <?php } ?>
+
+<!-- FOOTER GOES HERE -->
+<footer>
+	   <p>By visiting <a href="index.php">Findur.com</a> you agree to our <a href="cookiepolicy.html" target="_blank">cookie policy</a></p>
+	   <form method='post' action='process-newsletter.php'>
+	   </form>
+</footer>
