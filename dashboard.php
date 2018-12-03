@@ -56,12 +56,12 @@ $stmt->execute();
 		</select>
 		</form>
 		<br>
-		<div id="txtHint"><b>Patient info will be listed here.</b></div>
+		<div id="txtHint"><b>Please use the dropdown to select the relevant patient under your care.</b></div>
 
 		<div>
 			<p><a href="#">+</a></p>
 			<p><a href="#">Locate Firstname</a></p>
-			<p><a href="#">9-1-1</a></p>
+			<p><a href="911.php">9-1-1</a></p>
 		</div>
 
 		<script src="js/main.js"></script>
