@@ -7,8 +7,12 @@
 var map, infoWindow;
 
 function initMap() {
+	var mapElement = document.getElementById('map');
+	var attrLat = parseFloat(mapElement.getAttribute("lat"));
+	var attrLng = parseFloat(mapElement.getAttribute("lng"));
+
 	map = new google.maps.Map(document.getElementById('map'), {
-		center: {lat: 43.4683, lng: -79.6994},
+		center: {lat: attrLat, lng: attrLng},
 		zoom: 18
 		});
 	infoWindow = new google.maps.InfoWindow;
@@ -35,9 +39,15 @@ function initMap() {
 	marker.addListener('click', function() {
 		infowindow.open(map, marker);
 	});
+	var pos = {
+				lat: attrLat,
+				lng: attrLng
+			};
+	marker.setPosition(pos);
+	map.setCenter(pos);
 
 	// Try HTML5 geolocation.
-	if (navigator.geolocation) {
+	/*if (navigator.geolocation) {
 		navigator.geolocation.getCurrentPosition(function(position) {
 			var pos = {
 				lat: position.coords.latitude,
@@ -54,7 +64,7 @@ function initMap() {
 	} else {
 		// Browser doesn't support Geolocation
 		handleLocationError(false, infoWindow, map.getCenter());
-	}
+	}*/
 }
 
 function handleLocationError(browserHasGeolocation, infoWindow, pos) {

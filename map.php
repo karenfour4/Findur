@@ -1,3 +1,18 @@
+<?php 
+
+/* Connect to db and get lat and lng by patient id */
+/* replace hardcoded lat and lng attributes in the map element */
+
+/* just like pulling in firstName and lastName using PHP. */
+/* Have a look at getPatient.php to see how to fetch information. */
+
+$dsn = "mysql:host=localhost;dbname=four_Findur;charset=utf8mb4";
+$dbusername = "four_admin";
+$dbpassword = "Rejane@2608";
+
+$pdo = new PDO($dsn, $dbusername, $dbpassword);
+
+?>
 <!doctype html>
 <html>
 	<head>
@@ -22,7 +37,7 @@
 </header>
 <body>
 	<div class="bodyContent">
-		<div id="map"></div>
+		<div id="map" lat="48.8587741" lng="2.2069771"></div>
 		<input id="get_location" type="button" name="Get_location!" value="get_location" />
 		<input id="Emergency_Btn" type="button" name="Emergency_Btn" value="911" />
 	</div>

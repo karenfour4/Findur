@@ -34,7 +34,6 @@ if($_SESSION['logged-in'] == false){
 	</header>
 	<body>
 		<h1>Locate Patient</h1>
-		<p>This is a test!</p>
 		<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d23161.326990459074!2d-79.71408433930175!3d43.47800861978231!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x882b5d28315b07cd%3A0xffcd239cf878470e!2sSheridan+College!5e0!3m2!1sen!2sca!4v1542818207264" width="500" height="800" frameborder="0" style="border:0" allowfullscreen></iframe>
 		<div>
 			<p><a href="#">+</a></p>
