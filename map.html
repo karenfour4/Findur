@@ -9,26 +9,23 @@
 
 <!-- HEADER GOES HERE -->
 <header>
-	<header>
-		<nav>
-			<ul>
-				<li><a href="home.php"><img id="navLogo" src = "images/logo.png" /></a></li>
-				<li><a href="home.php">Home</a></li>
-				<li><a href="map.php">Locate</a></li>
-				<li><a href="contact.php">Contact Us</a></li>
-				<li><a href="login.php">Login</a></li>
-				<li><a href="register.php">Register</a></li>
-			</ul>
-		</nav>
-	</header>
+	<nav>
+		<ul>
+			<li class="LFloat"><a href="home.php"><img id="navLogo" src = "images/logo_invert.png" /></a></li>
+			<li class="LFloat"><a href="home.php">Home</a></li>
+			<li class="LFloat"><a href="map.php">Locate</a></li>
+			<li class="LFloat"><a href="contact.php">Contact Us</a></li>
+			<li class="LFloat"><a href="login.php">Login</a></li>
+			<li class="LFloat"><a href="register.php">Register</a></li>
+		</ul>
+	</nav>
 </header>
 <body>
-	<div id="map"></div>
-	<br>
-	<br>
-	<br>
-	<input id="get_location" type="button" name="Get location!" value="get_location" />
-	
+	<div class="bodyContent">
+		<div id="map"></div>
+		<input id="get_location" type="button" name="Get location!" value="get_location" />
+	</div>
+
 	<script src="js/findurMap.js"></script>
 	<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDPpk0rmzNDhi1IlHizFNR5AtyHp6zDUG8&callback=initMap" async defer></script>
 </body>
