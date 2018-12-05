@@ -26,5 +26,5 @@ $stmt = $pdo->prepare("INSERT INTO `patient` (`patientId`, `firstName`, `lastNam
 
 $stmt->execute();
 
-header("Location: dashboard.php");
+header("Location: register-thanks.php");
 ?>

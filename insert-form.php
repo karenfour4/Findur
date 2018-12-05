@@ -8,7 +8,7 @@ if($_SESSION['logged-in'] == false){
 		<form method='post' action='process-insert.php' enctype="multipart/form-data">
 		<input type="hidden" value="<?php echo($row["patientId"]); ?>" name="patientId"/>
 		Select image to upload:
-		<input type="file" name="ProfilePic"<p>
+		<input type="file" name="image"<p>
 
 		<p>First Name: <input type='text' name='firstName'></p>
 		<p>Last Name: <input type='text' name='lastName'></p>

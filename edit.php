@@ -57,9 +57,9 @@ $row = $stmt->fetch();
 
 	<p>PatientId: <?php echo($row["patientId"]); ?></p>
 	<input type="hidden" value="<?php echo($row["patientId"]); ?>" name="patientId"/>
+	<p><img src='images/<?php echo ($row["image"]); ?>'></p>
 	<p>First Name: <input type='text' name='firstName' value="<?php echo($row["firstName"]); ?>"/></p>
 	<p>Last Name: <input type='text' name='lastName' value="<?php echo($row["lastName"]); ?>"/></p>
-	<p>Image: <input type='text' name='image' value="<?php echo($row["image"]); ?>"/></p>
 	<p>Age: <input type='text' name='age' value="<?php echo($row["age"]); ?>"/></p>
 	<p>Height: <input type='text' name='height' value="<?php echo($row["height"]); ?>"/></p>
 	<p>Weight: <input type='text' name='weight' value="<?php echo($row["weight"]); ?>"/></p>
