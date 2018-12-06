@@ -55,16 +55,20 @@ $stmt->execute();
 		<option value="2">Aileen Somebody</option>
 		</select>
 		</form>
+
 		<br>
 		<div id="txtHint"><b>Please use the dropdown to select the relevant patient under your care.</b></div>
 
 		<div>
 			<p><a href="#">+</a></p>
-			<p><a href="#">Locate Firstname</a></p>
-			<p><a href="911.php">9-1-1</a></p>
+			<p><a id="patient911" href="">Locate Patient</a></p>
+			<!-- <p><a id="patient911" href="">9-1-1</a></p> -->
+
 		</div>
 
-		<script src="js/main.js"></script>
+		<script src="js/main-locate.js"></script>
+		<script src="js/findurMap.js"></script>
+		<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDPpk0rmzNDhi1IlHizFNR5AtyHp6zDUG8&callback=initMap" async defer></script>
 	</body>
 </html>
 
