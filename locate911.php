@@ -61,14 +61,12 @@ $row = $stmt->fetch();
 	<input type='submit'/>
 </form>
 
-<div id = "map">
-</div>
+<div id = "map"></div>
 <?php
 }
 ?>
 <script src="js/findurMap.js"></script>
 <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDPpk0rmzNDhi1IlHizFNR5AtyHp6zDUG8&callback=initMap" async defer></script>
-
 </body>
 <!-- FOOTER GOES HERE -->
 <footer>
