@@ -86,7 +86,9 @@
 <div class="footer">
 		<a href="contact.php">Contact Us</a>
 		<a href="login.php">Login</a>
-		By visiting <a href="index.php">Findur.com</a> you agree to our <a href="cookiepolicy.html" target="_blank">cookie policy</a>
+		<p>
+			By visiting <a href="index.php">Findur.com</a> you agree to our <a href="cookiepolicy.html" target="_blank">cookie policy</a>
+		</p>
 		<form method='post' action='process-newsletter.php'>
 			Sign up for our newsletter!
 			<input type='email' name="email" placeholder="e.g. name@gmail.com"><input type='submit'>
