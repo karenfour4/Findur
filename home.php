@@ -26,38 +26,58 @@
 
 <!-- BODY GOES HERE -->
 <body>
-		<div class="about">
-			<iframe width="560" height="315" src="https://www.youtube.com/embed/hzJpwq7Pxlc" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-		</div>
+		<div class="main-container">
+			<div class="main">
+				<div class="about">
+					<iframe width="560" height="315" src="https://www.youtube.com/embed/hzJpwq7Pxlc" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+				</div>
 
-		<!-- Product Features -->
-		<div class="row">
-			<div class="features">
-				<h2>Product Feature 1</h2>
-				<h2>Product Feature 2</h2>
-				<h2>Product Feature 3</h2>
+				<!-- Product Features -->
+				<div class="row" id="features">
+					<div class="feature">
+						<h2>Product Feature 1</h2>
+					</div>
+					<div class="feature">
+						<h2>Product Feature 2</h2>
+					</div>
+					<div class="feature">
+						<h2>Product Feature 3</h2>
+					</div>
+				</div>
+
+				<div class="row" id="register">
+					<div class="register">
+						<a href="register.php">Sign Up</a>
+					</div>
+				</div>
+
+				<!-- Testimonials -->
+				<div class="row" id="testimonials">
+					<div class="testimonail">
+						This is the coolest product ever! My grandma used to run away all
+						the time and now she doesn't because of Findur. We will forever be
+						grateful, thanks! We hope other families can feel as safe and secure
+						as we do using Findur.
+						Isabelle D.
+					</div>
+				</div>
+
+				<!-- Pricing -->
+				<div class="row" id="price">
+					<div class="pricing">
+						<h3>Pricing 1</h3>
+						<h3>Pricing 2</h3>
+						<h3>Pricing 3</h3>
+					</div>
+				</div>
+
+				<div class="row" id="register">
+					<div class="register">
+						<a href="register.php">Sign Up</a>
+					</div>
+				</div>
+
 			</div>
-
-			<div class="register">
-				<a href="register.php">Sign Up</a>
-			</div>
-		</div>
-
-		<!-- Testimonials -->
-		<div class="testimonails">
-			<p>This is the coolest product ever! My grandma used to run away all the time and now she doesn't because of Findur. We will forever be grateful, thanks! We hope other families can feel as safe and secure as we do using Findur.</p>
-			<p>Isabelle D.</p>
-		</div>
-
-		<!-- Pricing -->
-		<div class="pricing">
-			<h3>Pricing 1</h3>
-			<h3>Pricing 2</h3>
-			<h3>Pricing 3</h3>
-		</div>
-
-		<div class="register">
-			<a href="register.php">Sign Up</a>
 		</div>
 </body>
 

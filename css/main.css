@@ -11,7 +11,7 @@
 
 
 body {
-  background-color: #FEFEFE;
+  background-color: #BBBBBB;
   color: black;
   margin: 0px;
   font-family: Arial, Helvetica, sans-serif;
@@ -30,6 +30,7 @@ body {
 
 .navbar{
   height: 40px;
+  padding: 16px;
   background-color: #002361;
   border-top: 1px solid black;
   border-bottom: 1px solid black;
@@ -38,17 +39,58 @@ body {
 .navbar a{
   font-size:16px;
   text-align: center;
-  padding: 16px;
   text-decoration: none;
   color: white;
 }
 
+.main-container{
+  display: flex;
+  height: auto;
+  margin: auto;
+  max-width: 1200px;
+  background-color: #EEEEEE;
+}
+
+.main{
+  align-content: center;
+  height: auto;
+  padding: 16px 0px 16px 0px;
+}
+
+.row{
+  padding: 16px;
+}
+
+.about{
+  height: auto;
+  padding: 16px;
+  margin: auto;
+  background-color: black;
+  display: inline-block;
+}
+
+.feature{
+  max-width: 33%;
+  border: 1px solid black;
+  height: auto;
+  align-content: center;
+  margin: 16px;
+}
+
+.pricing{
+  max-width: 33%;
+  border: 1px solid black;
+}
+
 .footer{
+  width: auto;
   height: 40px;
   background-color: #002361;
   border-top: 1px solid black;
   border-bottom: 1px solid black;
   bottom: 0px;
+  color: white;
+  padding: 10px;
 }
 
 .footer a{
