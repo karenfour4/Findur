@@ -1,4 +1,4 @@
-<?php 
+<?php
 
 /* Connect to db and get lat and lng by patient id */
 /* replace hardcoded lat and lng attributes in the map element */
@@ -19,7 +19,8 @@ $pdo = new PDO($dsn, $dbusername, $dbpassword);
 		<title>Locate Patient</title>
 		<meta name="viewport" content="initial-scale=1.0" />
 		<meta charset="utf-8" />
-		<link rel="stylesheet" type="text/css" href="css/main.css" />
+		<link rel="stylesheet" type="text/css" href="css/main.css" media="all">
+
 	</head>
 
 <!-- HEADER GOES HERE -->

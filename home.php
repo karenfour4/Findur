@@ -3,25 +3,26 @@
 	<head>
 		<title>User Dashboard</title>
 		<meta charset="utf-8" />
+		<link rel="stylesheet" type="text/css" href="css/main.css" media="all">
 	</head>
 
 <!-- HEADER GOES HERE -->
 <header>
 		<img src = "images/logo.png" />
-		<nav>
-				<ul>
-						<li><a href="home.php">Home</a></li>
-						<li><a href="contact.php">Contact Us</a></li>
+		<div class="navbar">
+				<a href="home.php">Home</a>
+						<a href="contact.php">Contact Us</a>
 						<?php if ($_SESSION['logged-in'] == true){
-						?><li><a href="logout.php">Logout</a></li><?php
+						?><a href="logout.php">Logout</a><?php
 				}else{?>
-						<li><a href="login.php">Login</a></li>
-						<li><a href="register.php">Register</a></li>
+						<a href="login.php">Login</a>
+						<a href="register.php">Register</a>
 				<?php } ?>
-						<?php if ($_SESSION['role'] == 2) { ?> <li><a href="dashboard.php">Dashboard</a></li> <?php } ?>
-				</ul>
-		</nav>
+						<?php if ($_SESSION['role'] == 2) { ?> <a href="dashboard.php">Dashboard</a> <?php } ?>
+		</div>
 </header>
+
+
 <body>
 <iframe width="560" height="315" src="https://www.youtube.com/embed/hzJpwq7Pxlc" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 <!-- Product Features -->

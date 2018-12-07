@@ -13,6 +13,7 @@ $pdo = new PDO($dsn, $dbusername, $dbpassword);
 	<head>
 		<title>Login</title>
 		<meta charset="utf-8" />
+		<link rel="stylesheet" type="text/css" href="css/main.css" media="all">
 
 	</head>
 	<header>

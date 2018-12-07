@@ -11,6 +11,7 @@ if($_SESSION['logged-in'] == false){
 	<head>
 		<title>Locate Page</title>
 		<meta charset="utf-8" />
+		<link rel="stylesheet" type="text/css" href="css/main.css" media="all">
 	</head>
 	<header>
 			<img src = "images/logo.png" />
@@ -40,7 +41,7 @@ if($_SESSION['logged-in'] == false){
 			<p><a href="#">Locate Firstname</a></p>
 			<p><a href="#">9-1-1</a></p>
 		</div>
-		
+
 		<form>
 		<select name="patient" onchange="showPatient(this.value)">
 		<option value="">Select a patient:</option>
