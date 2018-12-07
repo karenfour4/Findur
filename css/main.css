@@ -84,7 +84,7 @@ body {
 
 .footer{
   width: auto;
-  height: 40px;
+  height: auto;
   background-color: #002361;
   border-top: 1px solid black;
   border-bottom: 1px solid black;
