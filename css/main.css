@@ -10,7 +10,6 @@
 ============================================*/
 
 
-
 body {
   background-color: #FEFEFE;
   color: black;
@@ -44,18 +43,12 @@ body {
   color: white;
 }
 
-.footer-container{
-  width: auto;
-  height: auto;
-  background-color: #002361;
-  position: fixed;
-  bottom: 0px;
-  margin: 0px;
-}
-
 .footer{
   height: 40px;
-  margin: 0px;
+  background-color: #002361;
+  border-top: 1px solid black;
+  border-bottom: 1px solid black;
+  bottom: 0px;
 }
 
 .footer a{
@@ -63,4 +56,5 @@ body {
   text-align: center;
   padding: 16px;
   text-decoration: none;
+  color: white;
 }
