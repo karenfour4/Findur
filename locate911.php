@@ -67,15 +67,15 @@ $row = $stmt->fetch();
 				<p>Lat: <input type='text' name='lat' value="<?php echo($row["lat"]); ?>"/></p>
 				<p>Lng: <input type='text' name='lng' value="<?php echo($row["lng"]); ?>"/></p>
 
+				<p><img src='images/<?php echo ($row["image"]); ?>'></p>
 				<p>First Name: <input type='text' name='firstName' value="<?php echo($row["firstName"]); ?>"/></p>
 				<p>Last Name: <input type='text' name='lastName' value="<?php echo($row["lastName"]); ?>"/></p>
-				<p>Image: <input type='text' name='image' value="<?php echo($row["image"]); ?>"/></p>
 				<p>Age: <input type='text' name='age' value="<?php echo($row["age"]); ?>"/></p>
 				<p>Height: <input type='text' name='height' value="<?php echo($row["height"]); ?>"/></p>
 				<p>Weight: <input type='text' name='weight' value="<?php echo($row["weight"]); ?>"/></p>
 				<p>Eye Color: <input type='text' name='eyeColor' value="<?php echo($row["eyeColor"]); ?>"/></p>
 				<p>Hair Color: <input type='text' name='hairColor' value="<?php echo($row["hairColor"]); ?>"/></p>
-				<p>Illnesses: <input type='textarea rows="10" cols="100"' name='illness' value="<?php echo($row["illness"]); ?>"/></p>
+				<p>Illnesses:</p><textarea rows="4" cols="50"><?php echo($row["illness"]); ?></textarea>
 				<p>Doctor: <input type='text' name='doctorName' value="<?php echo($row["doctorName"]); ?>"/></p>
 				<p>Doctor No: <input type='text' name='doctorPhone' value="<?php echo($row["doctorPhone"]); ?>"/></p>
 				<p>Emergency Contact: <input type='text' name='emergencyContact' value="<?php echo($row["emergencyContact"]); ?>"/></p>
