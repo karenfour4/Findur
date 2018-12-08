@@ -55,7 +55,7 @@
 
 						<!-- Testimonials -->
 						<div class="row" id="testimonials">
-							<div class="testimonail">
+							<div class="testimonial">
 								<p>This is the coolest product ever! My grandma used to run away all
 								the time and now she doesn't because of Findur. We will forever be
 								grateful, thanks! We hope other families can feel as safe and secure
