@@ -1,7 +1,7 @@
 <!doctype html>
 	<html>
 		<head>
-			<title>Findur : Home</title>
+			<title>Findur : About</title>
 			<meta charset="utf-8" />
 			<link rel="stylesheet" type="text/css" href="css/main.css" media="all">
 		</head>
@@ -18,7 +18,7 @@
 					<?php if($_SESSION['logged-in']==true){?><a href="logout.php">LOGOUT</a> | <?php
 					}else{
 						?><a href="login.php">LOGIN</a> |
-							<a href="register.php">REGISTER</a> <?php
+							<a href="register.php">REGISTER</a> | <?php
 					}?>
 					<?php if($_SESSION['role']==2){?> | <a href="dashboard.php">DASHBOARD</a> | <?php }?>
 					<a href="contact.php">CONTACT</a>
@@ -34,11 +34,13 @@
 							<!--<iframe width="560" height="315" src="https://www.youtube.com/embed/hzJpwq7Pxlc" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 							-->
 						</div>
-
+					</div>
+				</div>
 		</body>
 
 
 <!-- FOOTER GOES HERE -->
+
 		<div class="footer">
 			<a href="contact.php">Contact Us</a>
 			<a href="login.php">Login</a>

@@ -29,7 +29,7 @@ $pdo = new PDO($dsn, $dbusername, $dbpassword);
 					<?php if($_SESSION['logged-in']==true){?><a href="logout.php">LOGOUT</a> | <?php
 					}else{
 						?><a href="login.php">LOGIN</a> |
-							<a href="register.php">REGISTER</a> <?php
+							<a href="register.php">REGISTER</a> | <?php
 					}?>
 					<?php if($_SESSION['role']==2){?> | <a href="dashboard.php">DASHBOARD</a> | <?php }?>
 					<a href="contact.php">CONTACT</a>
@@ -37,30 +37,27 @@ $pdo = new PDO($dsn, $dbusername, $dbpassword);
 		</header>
 
 <!-- BODY GOES HERE -->
-
-
-				<form method='post' action='process-contact.php'>
-			<h1>Contact Us</h1>
-			<fieldset>
-			<input type="hidden" value="<?php echo($row["contactId"]); ?>" name="contactId"/>
-			  <p>
-					First Name: <input type='text' name="firstName" required/>
-					Last Name: <input type='text' name="lastName" required/>
-				</p>
-				<p>
-					Email: <input type='email' name="email" placeholder="e.g. name@gmail.com" required/>
-			  </P>
-				<p>
-					Subscribe to our newsletter: <input type='checkbox' name="newsletter" />
-				</P>
-				<p>
-					Comment: <br>
-					<input type='textarea rows="10" cols="100" name="comment"'/>
-				</P>
-			</fieldset>
-				<input type='submit'>
-		</form>
-	</body>
+		<body>
+			<div class="main-container">
+				<div class="main">
+					<div class="content">
+						<form method='post' action='process-contact.php'>
+							<h1>Contact Us</h1>
+							<fieldset id="fieldset">
+								<input type="hidden" value="<?php echo($row["contactId"]); ?>" name="contactId"/>
+										First Name: <input type='text' name="firstName" required/><br />
+										Last Name: <input type='text' name="lastName" required/><br /><br />
+										Email: <input type='email' name="email" placeholder="e.g. name@gmail.com" required/><br />
+										Subscribe to our newsletter: <input type='checkbox' name="newsletter" /><br /><br />
+										Comment: <br>
+										<input type='textarea rows="10" cols="100" name="comment"'/>
+							</fieldset>
+							<input id="submit" type='submit'>
+						</form>
+					</div>
+				</div>
+			</div>
+		</body>
 
 
 <!-- FOOTER GOES HERE -->

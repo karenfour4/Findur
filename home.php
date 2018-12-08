@@ -18,7 +18,7 @@
 					<?php if($_SESSION['logged-in']==true){?><a href="logout.php">LOGOUT</a> | <?php
 					}else{
 						?><a href="login.php">LOGIN</a> |
-							<a href="register.php">REGISTER</a> <?php
+							<a href="register.php">REGISTER</a> | <?php
 					}?>
 					<?php if($_SESSION['role']==2){?> | <a href="dashboard.php">DASHBOARD</a> | <?php }?>
 					<a href="contact.php">CONTACT</a>
@@ -38,10 +38,11 @@
 						<!-- Testimonials -->
 						<div class="row" id="testimonials">
 							<div class="testimonial">
+								<img src="images/isabelle.png" />
 								<p>"At last I've found a product that gives me peace of mind.
 									 My mother has wandered and gotten lost at least once a
 									 year--and now I can easily locate her through the app!"</p>
-								<p>Isabelle D.</p>
+								<p id="signature">Isabelle D.</p>
 							</div>
 						</div>
 						<!-- /Testimonials -->
@@ -73,7 +74,7 @@
 									also send their location co-ordinates and their physical
 									description (including a recent photo), critical medications
 									automatically to the police with the click of a button."</p>
-								<p>Neil O.</p>
+								<p id="signature">Neil O.</p>
 							</div>
 						</div>
 						<!-- /Testimonials -->
@@ -84,7 +85,7 @@
 								<p>"I really like that I can find my loved one and manage their
 									 personal health information (prescriptions and appointments)
 									 all in the same app."</p>
-								<p>Oliver H.</p>
+								<p id="signature">Oliver H.</p>
 							</div>
 						</div>
 						<!-- /Testimonials -->

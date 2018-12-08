@@ -28,7 +28,7 @@ $pdo = new PDO($dsn, $dbusername, $dbpassword);
 					<?php if($_SESSION['logged-in']==true){?><a href="logout.php">LOGOUT</a> | <?php
 					}else{
 						?><a href="login.php">LOGIN</a> |
-							<a href="register.php">REGISTER</a> <?php
+							<a href="register.php">REGISTER</a> | <?php
 					}?>
 					<?php if($_SESSION['role']==2){?> | <a href="dashboard.php">DASHBOARD</a> | <?php }?>
 					<a href="contact.php">CONTACT</a>
@@ -36,18 +36,22 @@ $pdo = new PDO($dsn, $dbusername, $dbpassword);
 		</header>
 
 <!-- BODY GOES HERE -->
-	  <body>
-			<form method='post' action='process-login.php'>
-				<h1>Login</h1>
-				<fieldset>
-				<input type="hidden" value="<?php echo($row["contactId"]); ?>" name="contactId"/>
-				  <p>
-						Email: <input type='email' name="email" placeholder="e.g. name@gmail.com" required/>
-	          Password:<input type='text' name="password" placeholder="enter your password" required/>
-				  </P>
-					</fieldset>
-					<input type='submit'>
-			</form>
+		<body>
+				<div class="main-container">
+					<div class="main">
+						<div class="content">
+							<h1>Login</h1>
+							<form method='post' action='process-login.php'>
+								<fieldset id="fieldset">
+								<input type="hidden" value="<?php echo($row["contactId"]); ?>" name="contactId"/>
+									Email: <input type='email' name="email" placeholder="e.g. name@gmail.com" required/>
+				          Password: <input type='text' name="password" placeholder="enter your password" required/>
+								</fieldset>
+								<input id="submit" type='submit'>
+							</form>
+						</div>
+					</div>
+				</div>
 		</body>
 
 

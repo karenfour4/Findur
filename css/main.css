@@ -48,7 +48,6 @@ body {
 
 .main-container{
   display: flex;
-  height: auto;
   margin: auto;
   max-width: 1200px;
   background-color: #EEEEEE;
@@ -79,9 +78,29 @@ body {
   color: #95D84C;
 }
 
+#fieldset{
+  padding: 16px;
+}
+
+#submit{
+  margin: 10px auto 10px auto;
+}
+
 .about img{
   max-width: 1200px;
   height: auto;
+}
+
+.content{
+  width: 100%;
+  margin: 0px 16px 0px 16px;
+  padding: 16px;
+  background-color: #FFFFFF;
+  display: inline-block;
+}
+
+#fieldset >input{
+  margin: 3px;
 }
 
 .feature{
@@ -104,6 +123,17 @@ body {
   width: 100%;
   display: inline-block;
   padding: 16px;
+}
+
+.testimonial > img{
+  float: left;
+  border: 1px solid black;
+  margin-right: 16px;
+}
+
+#signature{
+  float: right;
+  font-style: normal;
 }
 
 .pricing{

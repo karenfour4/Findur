@@ -28,7 +28,7 @@ $pdo = new PDO($dsn, $dbusername, $dbpassword);
 					<?php if($_SESSION['logged-in']==true){?><a href="logout.php">LOGOUT</a> | <?php
 					}else{
 						?><a href="login.php">LOGIN</a> |
-							<a href="register.php">REGISTER</a> <?php
+							<a href="register.php">REGISTER</a> | <?php
 					}?>
 					<?php if($_SESSION['role']==2){?> | <a href="dashboard.php">DASHBOARD</a> | <?php }?>
 					<a href="contact.php">CONTACT</a>
@@ -37,20 +37,24 @@ $pdo = new PDO($dsn, $dbusername, $dbpassword);
 
 <!-- BODY GOES HERE -->
 	  <body>
-
-			<form method='post' action='process-register.php'>
-				<h1>Register</h1>
-				<fieldset>
-				<input type="hidden" value="<?php echo($row["userId"]); ?>" name="userId"/>
-				<h2>Please create an account by entering the following:</h2>
-				 First Name: <input type='text' name="firstName" />
-				 Last Name: <input type='text' name="lastName" />
-				 Phone: <input type='text' name="phone" />
-				 Email: <input type='email' name="email" placeholder="e.g. name@gmail.com" required/>
-				 Password:<input type='text' name="password" placeholder="Minimum 1 letter and 1 number" required/>
-				</fieldset>
-					<input type='submit'>
-			</form>
+			<div class="main-container">
+				<div class="main">
+					<div class="content">
+							<form method='post' action='process-register.php'>
+								<h1>Register</h1>
+									<fieldset id="fieldset">
+										<input type="hidden" value="<?php echo($row["userId"]); ?>" name="userId"/>
+											 First Name: <input type='text' name="firstName" /><br />
+											 Last Name: <input type='text' name="lastName" /><br />
+											 Phone: <input type='text' name="phone" /><br />
+											 Email: <input type='email' name="email" placeholder="e.g. name@gmail.com" required/><br />
+											 Password:<input type='text' name="password" placeholder="Must contain #" required/>
+									</fieldset>
+								<input id="submit" type='submit'>
+							</form>
+						</div>
+					</div>
+				</div>
 		</body>
 
 <!-- FOOTER GOES HERE -->
