@@ -37,20 +37,21 @@ $row = $stmt->fetch();
 
 <!-- HEADER GOES HERE -->
 		<header>
-			<div class="logo">
-				<img src="images/logo.png" />
-			</div>
+				<div class="logo">
+					<img src="images/logo.png" />
+				</div>
 
-			<div class="navbar">
-				<a href="home.php">HOME</a> |
-				<a href="contact.php">CONTACT</a> |
-				<?php if($_SESSION['logged-in']==true){?><a href="logout.php">LOGOUT</a> | <?php
-				}else{
-					?><a href="login.php">LOGIN</a> |
-						<a href="register.php">REGISTER</a> <?php
-				}?>
-				<?php if($_SESSION['role']==2){?> | <a href="dashboard.php">DASHBOARD</a> <?php }?>
-			</div>
+				<div class="navbar">
+					<a href="home.php">HOME</a> |
+					<a href="about.php">ABOUT</a> |
+					<?php if($_SESSION['logged-in']==true){?><a href="logout.php">LOGOUT</a> | <?php
+					}else{
+						?><a href="login.php">LOGIN</a> |
+							<a href="register.php">REGISTER</a> <?php
+					}?>
+					<?php if($_SESSION['role']==2){?> | <a href="dashboard.php">DASHBOARD</a> | <?php }?>
+					<a href="contact.php">CONTACT</a>
+				</div>
 		</header>
 
 <!-- BODY GOES HERE -->
@@ -79,7 +80,7 @@ $row = $stmt->fetch();
 			}
 			?>
 		</body>
-		
+
 <!-- FOOTER GOES HERE -->
 		<div class="footer">
 			<a href="contact.php">Contact Us</a>

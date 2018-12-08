@@ -22,13 +22,14 @@ if($_SESSION['logged-in'] == false){
 
 				<div class="navbar">
 					<a href="home.php">HOME</a> |
-					<a href="contact.php">CONTACT</a> |
+					<a href="about.php">ABOUT</a> |
 					<?php if($_SESSION['logged-in']==true){?><a href="logout.php">LOGOUT</a> | <?php
 					}else{
 						?><a href="login.php">LOGIN</a> |
 							<a href="register.php">REGISTER</a> <?php
 					}?>
-					<?php if($_SESSION['role']==2){?> | <a href="dashboard.php">DASHBOARD</a> <?php }?>
+					<?php if($_SESSION['role']==2){?> | <a href="dashboard.php">DASHBOARD</a> | <?php }?>
+					<a href="contact.php">CONTACT</a>
 				</div>
 		</header>
 

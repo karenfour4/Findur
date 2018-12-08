@@ -14,13 +14,14 @@
 
 				<div class="navbar">
 					<a href="home.php">HOME</a> |
-					<a href="contact.php">CONTACT</a> |
+					<a href="about.php">ABOUT</a> |
 					<?php if($_SESSION['logged-in']==true){?><a href="logout.php">LOGOUT</a> | <?php
 					}else{
 						?><a href="login.php">LOGIN</a> |
 							<a href="register.php">REGISTER</a> <?php
 					}?>
-					<?php if($_SESSION['role']==2){?> | <a href="dashboard.php">DASHBOARD</a> <?php }?>
+					<?php if($_SESSION['role']==2){?> | <a href="dashboard.php">DASHBOARD</a> | <?php }?>
+					<a href="contact.php">CONTACT</a>
 				</div>
 		</header>
 
@@ -34,6 +35,17 @@
 							-->
 						</div>
 
+						<!-- Testimonials -->
+						<div class="row" id="testimonials">
+							<div class="testimonial">
+								<p>"At last I've found a product that gives me peace of mind.
+									 My mother has wandered and gotten lost at least once a
+									 year--and now I can easily locate her through the app!"</p>
+								<p>Isabelle D.</p>
+							</div>
+						</div>
+						<!-- /Testimonials -->
+
 						<!-- Product Features -->
 						<div class="row" id="features">
 							<div class="feature">
@@ -46,6 +58,7 @@
 								<h2>Product Feature 3</h2>
 							</div>
 						</div>
+						<!-- /Product Features -->
 
 						<div class="row" id="register">
 							<div class="register">
@@ -56,13 +69,25 @@
 						<!-- Testimonials -->
 						<div class="row" id="testimonials">
 							<div class="testimonial">
-								<p>This is the coolest product ever! My grandma used to run away all
-								the time and now she doesn't because of Findur. We will forever be
-								grateful, thanks! We hope other families can feel as safe and secure
-								as we do using Findur.</p>
-								<p>Isabelle D.</p>
+								<p>"Not only can I immediately locate my loved one, but I can
+									also send their location co-ordinates and their physical
+									description (including a recent photo), critical medications
+									automatically to the police with the click of a button."</p>
+								<p>Neil O.</p>
 							</div>
 						</div>
+						<!-- /Testimonials -->
+
+						<!-- Testimonials -->
+						<div class="row" id="testimonials">
+							<div class="testimonial">
+								<p>"I really like that I can find my loved one and manage their
+									 personal health information (prescriptions and appointments)
+									 all in the same app."</p>
+								<p>Oliver H.</p>
+							</div>
+						</div>
+						<!-- /Testimonials -->
 
 						<!-- Pricing -->
 						<div class="row" id="price">
@@ -76,6 +101,7 @@
 								<h3>Pricing 3</h3>
 							</div>
 						</div>
+						<!-- /Pricing -->
 
 						<div class="row" id="register">
 							<div class="register">
