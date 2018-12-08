@@ -46,32 +46,35 @@ $stmt->execute();
 		</header>
 
 <!-- BODY GOES HERE -->
+		<body>
+			<div class="main-container">
+				<div class="main">
+					<div class="content">
+							<form>
+							<select name="patient" onchange="showPatient(this.value)">
+							<option value="">Select a patient:</option>
+							<option value="1">Ralph Somebody</option>
+							<option value="2">Aileen Somebody</option>
+							</select>
+							</form>
 
-	<body>
+							<br>
+							<div id="txtHint"><b>Please use the dropdown to select the relevant patient under your care.</b></div>
 
-		<form>
-		<select name="patient" onchange="showPatient(this.value)">
-		<option value="">Select a patient:</option>
-		<option value="1">Ralph Somebody</option>
-		<option value="2">Aileen Somebody</option>
-		</select>
-		</form>
+							<div>
+								<p><a href="#">+</a></p>
+								<p><a id="patient911" href="">Locate Patient</a></p>
+								<!-- <p><a id="patient911" href="">9-1-1</a></p> -->
+							</div>
+						</div>
+					</div>
+				</div>
 
-		<br>
-		<div id="txtHint"><b>Please use the dropdown to select the relevant patient under your care.</b></div>
-
-		<div>
-			<p><a href="#">+</a></p>
-			<p><a id="patient911" href="">Locate Patient</a></p>
-			<!-- <p><a id="patient911" href="">9-1-1</a></p> -->
-
-		</div>
-
-		<script src="js/main-locate.js"></script>
-		<script src="js/findurMap.js"></script>
-		<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDPpk0rmzNDhi1IlHizFNR5AtyHp6zDUG8&callback=initMap" async defer></script>
-	</body>
-</html>
+			<script src="js/main-locate.js"></script>
+			<script src="js/findurMap.js"></script>
+			<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDPpk0rmzNDhi1IlHizFNR5AtyHp6zDUG8&callback=initMap" async defer></script>
+		</body>
+	</html>
 
 <?php } ?>
 
