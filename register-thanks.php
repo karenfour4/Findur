@@ -29,7 +29,7 @@
 <!-- BODY GOES HERE -->
 		<body>
 			<p>Thanks for signing up for an account.  Please check and validate your details via the email link sent.</p>
-			<a href="dashboard.php">Go back to dashboard</a>
+			<a href="login.php">Go back and login after validating your email.</a>
 		</body>
 
 <!-- FOOTER GOES HERE -->
