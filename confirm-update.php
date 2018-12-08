@@ -30,7 +30,7 @@ $pdo = new PDO($dsn, $dbusername, $dbpassword);
 
 $stmt = $pdo->prepare("UPDATE `patient` SET `image` = '$image', `firstName` = '$firstName', `lastName` = '$lastName', `age` = '$age', `height` = '$height',
   `weight` = '$weight', `eyeColor` = '$eyeColor', `hairColor` = '$hairColor',`illness` = '$illness', `doctorName` = '$doctorName',
-  `doctorPhone` = '$doctorPhone',`emergencyContact` = '$emergencyContact',`emergencyNo` = '$emergencyNo', WHERE `patient`.`patientId` = $patientId;");
+  `doctorPhone` = '$doctorPhone',`emergencyContact` = '$emergencyContact',`emergencyNo` = '$emergencyNo' WHERE `patient`.`patientId` = $patientId;");
 
 $stmt->execute();
 
