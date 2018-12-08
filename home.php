@@ -50,13 +50,25 @@
 						<!-- Product Features -->
 						<div class="row" id="features">
 							<div class="feature">
-								<h2>Product Feature 1</h2>
+								<h2>What is Find'ur</h2>
+								Find'ur is a wearable locating technology which is a small chip using a beacon and geolocation service (GPS) to track and locate older adults with dementia who have wandered and gotten lost.  The chip can be attached to any object like clothing items, glasses, or inside the heel of a shoe for example.
 							</div>
 							<div class="feature">
-								<h2>Product Feature 2</h2>
+								<h2>What is included with Find'ur</h2>
+								The Find'ur application provides:
+								<li>Find'ur chip</li>
+								<li>registration to the service</li>
+								<li>caregiver dashboard with a profile page for each person under their care. This includes personal health information (prescriptions and appointments).</li>
+								<li>Locate patient co-ordinates and autofill missing-person police report</li>
+
 							</div>
 							<div class="feature">
-								<h2>Product Feature 3</h2>
+								<h2>How it works?</h2>
+								<li>Caregiver hits the 'locate patient' button to find a person under their care who has wandered.</p>
+								<li>Chip activates geo-location service and send GPS co-ordinates to the server.</p>
+								<li>Find'ur retrieves information and displays the information within seconds.</p>
+								<li>Caregiver is able to send the GPS co-ordinates, personal description and critical information through a pre-populated missing-persons report to the police.
+
 							</div>
 						</div>
 						<!-- /Product Features -->
@@ -93,13 +105,19 @@
 						<!-- Pricing -->
 						<div class="row" id="price">
 							<div class="pricing">
-								<h3>Pricing 1</h3>
+								<h3>Trial Offer</h3>
+								Trial 30 day free
 							</div>
 							<div class="pricing">
-								<h3>Pricing 2</h3>
+								<h3>Monthly Plan</h3>
+								1 user account can manage up to 3 personal profiles = $60 per month
+								Payment accepted upfront for 1 year (recurring debit orders)
 							</div>
 							<div class="pricing">
-								<h3>Pricing 3</h3>
+								<h3>Ad-hoc</h3>
+								1 user account can manage up to 3 personal profiles = $60 per month
+								Each additional personal profile = $15 each per month
+								Payment accepted upfront for 1 year (recurring debit orders)
 							</div>
 						</div>
 						<!-- /Pricing -->
