@@ -8,33 +8,37 @@ $dbpassword = "Rejane@2608";
 $pdo = new PDO($dsn, $dbusername, $dbpassword);
 
 ?>
+
 <!doctype html>
 <html>
 	<head>
-		<title>Contact Us</title>
+		<title>Findur : Contact</title>
 		<meta charset="utf-8" />
 		<link rel="stylesheet" type="text/css" href="css/main.css" media="all">
-
 	</head>
-	<!-- HEADER GOES HERE -->
-	<header>
-			<img src = "images/logo.png" />
-			<nav>
-					<ul>
-							<li><a href="home.php">Home</a></li>
-							<?php if ($_SESSION['logged-in'] == true){
-							?><li><a href="logout.php">Logout</a></li><?php
-					}else{?>
-							<li><a href="login.php">Login</a></li>
-							<li><a href="register.php">Register</a></li>
-					<?php } ?>
-							<?php if ($_SESSION['role'] == 2) { ?> <li><a href="dashboard.php">Dashboard</a></li> <?php } ?>
-					</ul>
-			</nav>
-	</header>
-	<body>
 
-		<form method='post' action='process-contact.php'>
+<!-- HEADER GOES HERE -->
+<header>
+		<div class="logo">
+			<img src="images/logo.png" />
+		</div>
+
+		<div class="navbar">
+			<a href="home.php">HOME</a> |
+			<a href="contact.php">CONTACT</a> |
+			<?php if($_SESSION['logged-in']==true){?><a href="logout.php">LOGOUT</a> | <?php
+			}else{
+				?><a href="login.php">LOGIN</a> |
+					<a href="register.php">REGISTER</a> <?php
+			}?>
+			<?php if($_SESSION['role']==2){?> | <a href="dashboard.php">DASHBOARD</a> <?php }?>
+		</div>
+</header>
+
+<!-- BODY GOES HERE -->
+
+
+				<form method='post' action='process-contact.php'>
 			<h1>Contact Us</h1>
 			<fieldset>
 			<input type="hidden" value="<?php echo($row["contactId"]); ?>" name="contactId"/>
@@ -56,14 +60,18 @@ $pdo = new PDO($dsn, $dbusername, $dbpassword);
 				<input type='submit'>
 		</form>
 	</body>
-	<!-- Footer GOES HERE -->
-	<footer>
-			<p><a href="contact.php">Contact Us</a></p>
-			<p><a href="login.php">Login</a></p>
-			<p>By visiting <a href="index.php">Findur.com</a> you agree to our <a href="cookiepolicy.html" target="_blank">cookie policy</a></p>
+
+
+<!-- FOOTER GOES HERE -->
+		<div class="footer">
+			<a href="contact.php">Contact Us</a>
+			<a href="login.php">Login</a>
+			<br />
+			<a href="index.php">Findur.com</a><a href="cookiepolicy.html" target="_blank">cookie policy</a>
+			<br />
 			<form method='post' action='process-newsletter.php'>
-				<p>Sign up for our newsletter</p>
+				Sign up for our newsletter!
 				<input type='email' name="email" placeholder="e.g. name@gmail.com"><input type='submit'>
 			</form>
-	</footer>
-</html>
+		</div>
+	</html>

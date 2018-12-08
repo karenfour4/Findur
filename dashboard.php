@@ -21,31 +21,30 @@ $stmt->execute();
 <!doctype html>
 <html>
 	<head>
-		<title>Dashboard</title>
+		<title>Findur : dashboard</title>
 		<meta charset="utf-8" />
 		<link rel="stylesheet" type="text/css" href="css/main.css" media="all">
 	</head>
 
-	<header>
-			<img src = "images/logo.png" />
-			<nav>
-					<ul>
-							<li><a href="index.php">Home</a></li>
-							<?php if ($_SESSION['logged-in'] == true){
-							?><li><a href="dashboard.php">Dashboard</a></li>
-							<li><a href="account-settings.php">Account Settings</a></li>
-							<li><a href="insert-form.php">Add New Patient</a></li>
-							<li><a href="locate.php">Locate Patient</a></li>
-							<li><a href="logout.php">Logout</a></li><?php
-					}else{?>
-							<li><a href="login.php">Login</a></li>
-							<li><a href="register.php">Register</a></li>
-					<?php } ?>
-						<li><a href="contact.php">Contact Us</a></li>
-							<?php if ($_SESSION['role'] == 2) { ?> <li><a href="dashboard.php">Dashboard</a></li> <?php } ?>
-					</ul>
-			</nav>
-	</header>
+<!-- HEADER GOES HERE -->
+<header>
+		<div class="logo">
+			<img src="images/logo.png" />
+		</div>
+
+		<div class="navbar">
+			<a href="home.php">HOME</a> |
+			<a href="contact.php">CONTACT</a> |
+			<?php if($_SESSION['logged-in']==true){?><a href="logout.php">LOGOUT</a> | <?php
+			}else{
+				?><a href="login.php">LOGIN</a> |
+					<a href="register.php">REGISTER</a> <?php
+			}?>
+			<?php if($_SESSION['role']==2){?> | <a href="dashboard.php">DASHBOARD</a> <?php }?>
+		</div>
+</header>
+
+<!-- BODY GOES HERE -->
 
 	<body>
 
@@ -76,8 +75,15 @@ $stmt->execute();
 <?php } ?>
 
 <!-- FOOTER GOES HERE -->
-<footer>
-	   <p>By visiting <a href="index.php">Findur.com</a> you agree to our <a href="cookiepolicy.html" target="_blank">cookie policy</a></p>
-	   <form method='post' action='process-newsletter.php'>
-	   </form>
-</footer>
+	<div class="footer">
+		<a href="contact.php">Contact Us</a>
+		<a href="login.php">Login</a>
+		<br />
+		<a href="index.php">Findur.com</a><a href="cookiepolicy.html" target="_blank">cookie policy</a>
+		<br />
+		<form method='post' action='process-newsletter.php'>
+			Sign up for our newsletter!
+			<input type='email' name="email" placeholder="e.g. name@gmail.com"><input type='submit'>
+		</form>
+	</div>
+</html>

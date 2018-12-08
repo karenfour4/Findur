@@ -11,7 +11,7 @@
 
 
 body {
-  background-color: #BBBBBB;
+  background-color: #FFFFFF;
   color: black;
   margin: 0px;
   font-family: Arial, Helvetica, sans-serif;
@@ -26,14 +26,16 @@ body {
 
 .logo{
   background-color: #80E8FF;
+  padding: 16px;
 }
 
 .navbar{
-  height: 40px;
+  height: auto;
   padding: 16px;
   background-color: #002361;
   border-top: 1px solid black;
   border-bottom: 1px solid black;
+  color: white;
 }
 
 .navbar a{
@@ -52,30 +54,56 @@ body {
 }
 
 .main{
-  align-content: center;
   height: auto;
   padding: 16px 0px 16px 0px;
 }
 
 .row{
   padding: 16px;
+  margin: auto;
+  display: flex;
 }
 
-.about{
-  height: auto;
-  padding: 16px;
+#register, a{
+  font-size: 24px;
   margin: auto;
-  background-color: black;
-  display: inline-block;
+  text-align: center;
+  text-decoration: none;
+  color: #95D84C;
+}
+
+.about img{
+  max-width: 1200px;
+  height: auto;
 }
 
 .feature{
-  max-width: 33%;
+  background-color: #FFFFFF;
+  display: inline-block;
+  width: 25%;
+  min-width: 20%;
   border: 1px solid black;
   height: auto;
-  align-content: center;
-  margin: 16px;
+  text-align: center;
+  margin: 8px;
+  padding: 8px;
 }
+
+.testimonial{
+  background-color: #FFFFFF;
+}
+
+.pricing{
+  background-color: #FFFFFF;
+  width: 25%;
+  min-width: 20%;
+  border: 1px solid black;
+  height: auto;
+  text-align: center;
+  margin: 8px;
+  padding: 8px;
+}
+
 
 .pricing{
   max-width: 33%;
