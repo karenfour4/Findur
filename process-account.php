@@ -7,12 +7,13 @@ if($_SESSION['logged-in'] == false){
 }else{
 
 $userId = $_POST['userId'];
+$profilePic = $_POST['profilePic'];
 $firstName = $_POST['firstName'];
 $lastName = $_POST['lastName'];
 $phone = $_POST['phone'];
 $email = $_POST['email'];
 $password = $_POST['password'];
-$profilePic = $_POST['profilePic'];
+
 
 /*execute update*/
 $dsn = "mysql:host=localhost;dbname=four_Findur;charset=utf8mb4";
@@ -21,7 +22,7 @@ $dbpassword = "Rejane@2608";
 
 $pdo = new PDO($dsn, $dbusername, $dbpassword);
 
-$stmt = $pdo->prepare("UPDATE `users` SET `firstName` = '$firstName', `lastName` = '$lastName', `phone` = '$phone',`email` = '$email',`password` = '$password', `profilePic` = '$profilePic' WHERE `userId`.`userId` = $userId;");
+$stmt = $pdo->prepare("UPDATE `users` SET `profilePic` = '$profilePic', `firstName` = '$firstName', `lastName` = '$lastName', `phone` = '$phone',`email` = '$email',`password` = '$password' WHERE `userId`.`userId` = $userId;");
 
 $stmt->execute();
 

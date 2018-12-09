@@ -41,7 +41,7 @@ $pdo = new PDO($dsn, $dbusername, $dbpassword);
 			<div class="main-container">
 				<div class="main">
 					<div class="content">
-						<form method='post' action='process-contact.php'>
+						<form method='post' action='process-contact-page.php'>
 							<h1>Contact Us</h1>
 							<fieldset id="fieldset">
 								<input type="hidden" value="<?php echo($row["contactId"]); ?>" name="contactId"/>
