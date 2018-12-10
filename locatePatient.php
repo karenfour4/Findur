@@ -1,11 +1,19 @@
 <?php
 
+session_start();
+
+if($_SESSION['logged-in'] == false){
+	echo("You are not allowed to view this page");
+	?><a href="login.php">Go to login</a><?php
+}else{
+
+$q = $_GET['q'];
+
 $dsn = "mysql:host=localhost;dbname=four_Findur;charset=utf8mb4";
 $dbusername = "four_admin";
 $dbpassword = "Rejane@2608";
 
 $pdo = new PDO($dsn, $dbusername, $dbpassword);
-$q = $_GET['q'];
 
 $stmt1 = $pdo->prepare("SELECT * FROM `patient` WHERE patientId = '$q'");
 $stmt2 = $pdo->prepare("SELECT patient.patientId, patient.firstName, patient.lastName, prescription.prescriptionId, prescription.drugName, prescription.dosage
@@ -16,6 +24,9 @@ $stmt2 = $pdo->prepare("SELECT patient.patientId, patient.firstName, patient.las
 $stmt1->execute();
 $stmt2->execute();
 ?>
+<?php }
+?>
+
 <!DOCTYPE html>
 <html>
      <head>
@@ -41,8 +52,6 @@ $stmt2->execute();
 
           Id: <?php echo($row["patientId"]);?>
           <span><a href="edit.php?patientId=<?php echo($row["patientId"]);?>">Edit</a></span>
-          <!-- <p>Latitude: <?php echo($row["lat"]); ?></p>
-          <p>Longitude: <?php echo($row["lng"]); ?></p> -->
           <p><img src='images/<?php echo ($row["image"]); ?>'></p>
           <p>First Name: <?php echo($row["firstName"]); ?></p>
           <p>Last Name: <?php echo($row["lastName"]); ?></p>
@@ -64,9 +73,7 @@ $stmt2->execute();
      <?php
           while($row = $stmt2->fetch()) {
           ?><div>
-          <input type="hidden" value="<?php echo($row["prescriptionId"]);?>
+          <p><input type="hidden" value= '<?php echo($row["prescriptionId"]);?>'</p>
           <p>Drug Name: <?php echo($row["drugName"]); ?></p>
           <p>Dosage: <?php echo($row["dosage"]); ?></p>
-          </div>
-     <?php }
-     ?>
+          </div> <?php }  ?>
