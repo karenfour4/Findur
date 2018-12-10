@@ -64,8 +64,8 @@ $row = $stmt->fetch();
 
 				<p>PatientId: <?php echo($row["patientId"]); ?></p>
 				<input type="hidden" value="<?php echo($row["patientId"]); ?>" name="patientId"/>
-				<p>Lat: <input type='text' name='lat' value="<?php echo($row["lat"]); ?>"/></p>
-				<p>Lng: <input type='text' name='lng' value="<?php echo($row["lng"]); ?>"/></p>
+				<p>Lat: <?php echo($row["lat"]); ?></p>
+				<p>Lng: <?php echo($row["lng"]); ?></p>
 
 				<p><img src='images/<?php echo ($row["image"]); ?>'></p>
 				<p>First Name: <input type='text' name='firstName' value="<?php echo($row["firstName"]); ?>"/></p>
