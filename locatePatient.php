@@ -41,8 +41,8 @@ $stmt2->execute();
 
           Id: <?php echo($row["patientId"]);?>
           <span><a href="edit.php?patientId=<?php echo($row["patientId"]);?>">Edit</a></span>
-          <p>Latitude: <?php echo($row["lat"]); ?></p>
-          <p>Longitude: <?php echo($row["lng"]); ?></p>
+          <!-- <p>Latitude: <?php echo($row["lat"]); ?></p>
+          <p>Longitude: <?php echo($row["lng"]); ?></p> -->
           <p><img src='images/<?php echo ($row["image"]); ?>'></p>
           <p>First Name: <?php echo($row["firstName"]); ?></p>
           <p>Last Name: <?php echo($row["lastName"]); ?></p>
