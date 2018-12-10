@@ -45,9 +45,9 @@ $pdo = new PDO($dsn, $dbusername, $dbpassword);
 							<h1>Contact Us</h1>
 							<fieldset id="fieldset">
 								<input type="hidden" value="<?php echo($row["contactId"]); ?>" name="contactId"/>
-										First Name: <input type='text' name="firstName" required/><br />
-										Last Name: <input type='text' name="lastName" required/><br /><br />
-										Email: <input type='email' name="email" placeholder="e.g. name@gmail.com" required/><br />
+										First Name: <input type='text' name="firstName" placeholder="e.g. Samantha" required/><br />
+										Last Name: <input type='text' name="lastName" placeholder="e.g. Wintergreen" required/><br /><br />
+										Email: <input type='email' name="email" placeholder="e.g. SamWinter@gmail.com" required/><br />
 										Subscribe to our newsletter: <input type='checkbox' name="newsletter" /><br /><br />
 										Comment: <br>
 										<input type='textarea rows="10" cols="100" name="comment"'/>

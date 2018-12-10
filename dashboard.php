@@ -33,15 +33,12 @@ $stmt->execute();
 				</div>
 
 				<div class="navbar">
-					<a href="home.php">HOME</a> |
-					<a href="about.php">ABOUT</a> |
+					<?php if($_SESSION['role']==2){?> | <a href="dashboard.php">DASHBOARD</a> | <?php }?>
 					<?php if($_SESSION['logged-in']==true){?><a href="account-settings.php">ACCOUNT SETTINGS</a> | <a href="insert-form.php">ADD PATIENT</a> | <a href="dashboard.php">DASHBOARD</a> | <a href="logout.php">LOGOUT</a> |<?php
 					}else{
 						?><a href="login.php">LOGIN</a> |
 							<a href="register.php">REGISTER</a> <?php
 					}?>
-					<?php if($_SESSION['role']==2){?> | <a href="dashboard.php">DASHBOARD</a> | <?php }?>
-					<a href="contact.php">CONTACT</a>
 				</div>
 		</header>
 
@@ -62,8 +59,8 @@ $stmt->execute();
 							<div id="txtHint"><b>Please use the dropdown to select the relevant patient under your care.</b></div>
 
 							<div>
-								<p><a href="#">+</a></p>
-								<p><a id="patient911" href="">Locate Patient</a></p>
+								<p><a href="insert-form.php">+</a></p>
+								<p><a id="patient911" href="locatePatient.php">Locate Patient</a></p>
 								<!-- <p><a id="patient911" href="">9-1-1</a></p> -->
 							</div>
 						</div>

@@ -44,11 +44,11 @@ $pdo = new PDO($dsn, $dbusername, $dbpassword);
 								<h1>Register</h1>
 									<fieldset id="fieldset">
 										<input type="hidden" value="<?php echo($row["userId"]); ?>" name="userId"/>
-											 First Name: <input type='text' name="firstName" /><br />
-											 Last Name: <input type='text' name="lastName" /><br />
-											 Phone: <input type='text' name="phone" /><br />
-											 Email: <input type='email' name="email" placeholder="e.g. name@gmail.com" required/><br />
-											 Password:<input type='text' name="password" placeholder="Must contain #" required/>
+											 First Name: <input type='text' placeholder="e.g. Peter" name="firstName" /><br />
+											 Last Name: <input type='text' placeholder="e.g. Wellington" name="lastName" /><br />
+											 Phone: <input type='text' placeholder="e.g. 9052325678" name="phone" /><br />
+											 Email: <input type='email' name="email" placeholder="e.g. PeterW@gmail.com" required/><br />
+											 Password:<input type='text' name="password" placeholder="Must contain a number" required/>
 									</fieldset>
 								<input id="submit" type='submit'>
 							</form>
