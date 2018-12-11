@@ -85,7 +85,7 @@ $row = $stmt->fetch();
 			}
 			?>
 			<script src="js/findurMap.js"></script>
-			<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDPpk0rmzNDhi1IlHizFNR5AtyHp6zDUG8&callback=initMap" async defer></script>
+			<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCN_fhrGZWOIP3Iq_ZRc3HhFuufAzRIm5M&callback=initMap" async defer></script>
 		</body>
 
 <!-- FOOTER GOES HERE -->
