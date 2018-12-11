@@ -2,6 +2,7 @@
 
 //receive values user submitted from form
 // $image = $_POST['image'];
+$patientId = $_POST['patientId'];
 $firstName = $_POST['firstName'];
 $lastName = $_POST['lastName'];
 $image = $_POST['image'];
@@ -23,7 +24,8 @@ $dbpassword = "Rejane@2608";
 
 $pdo = new PDO($dsn, $dbusername, $dbpassword);
 
-$stmt = $pdo->prepare("INSERT INTO `patient` (`patientId`, `firstName`, `lastName`, `image`,`age`,`height`,`weight`,`eyeColor`,`hairColor`,`illness`,`doctorName`,`doctorPhone`,`emergencyContact`,`emergencyNo`) VALUES (NULL, '$firstName', '$lastName','$image','$age','$height','$weight','$eyeColor','$hairColor','$illness','$doctorName','$doctorPhone','$emergencyContact','$emergencyNo'); ");
+$stmt = $pdo->prepare("INSERT INTO `patient` (`patientId`, `firstName`, `lastName`, `image`,`age`,`height`,`weight`,`eyeColor`,`hairColor`,`illness`,`doctorName`,`doctorPhone`,`emergencyContact`,`emergencyNo`) VALUES
+(NULL, '$firstName', '$lastName','$image','$age','$height','$weight','$eyeColor','$hairColor','$illness','$doctorName','$doctorPhone','$emergencyContact','$emergencyNo'); ");
 
 $stmt->execute();
 
