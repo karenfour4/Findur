@@ -64,9 +64,18 @@ body {
   display: flex;
 }
 
+#register, img{
+  margin: auto;
+  padding: auto;
+}
+
 #testimonials{
   width: 85%;
   display: flex;
+}
+
+#testimonials > img{
+  float:left;
 }
 
 #register, #register a{
@@ -144,6 +153,13 @@ body {
   text-align: center;
   margin: 8px;
   padding: 8px;
+}
+
+.info{
+  background-color: #FFFFFF;
+  width: 100%;
+  display: inline-block;
+  padding: 16px;
 }
 
 
