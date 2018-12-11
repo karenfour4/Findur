@@ -64,7 +64,7 @@ body {
   display: flex;
 }
 
-#register, img{
+.register {
   margin: auto;
   padding: auto;
 }
@@ -78,13 +78,14 @@ body {
   float:left;
 }
 
-#register, #register a{
+#register a{
   width: 100%;
   font-size: 24px;
   margin: auto;
   text-align: center;
   text-decoration: none;
   color: #95D84C;
+  padding:auto;
 }
 
 #fieldset{

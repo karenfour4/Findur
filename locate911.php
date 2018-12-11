@@ -94,7 +94,7 @@ $row = $stmt->fetch();
 			<a href="contact.php">Contact Us</a>
 			<a href="login.php">Login</a>
 			<br />
-			<a href="index.php">Findur.com</a><a href="#" target="_blank">cookie policy</a>
+			<a href="#" target="_blank">cookie policy</a>
 			<br />
 			<form method='post' action='process-newsletter.php'>
 				Sign up for our newsletter!
