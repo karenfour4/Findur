@@ -95,7 +95,18 @@ body {
 #submit{
   margin: 10px auto 10px auto;
 }
-
+.patient{
+  background-color: #FFFFFF;
+  width: 80%;
+  border: 1px solid black;
+  height: auto;
+  margin: 8px;
+  padding: 20px;
+  overflow: none;
+}
+.patient img{
+  max-width: 85%;
+}
 .about img{
   max-width: 1200px;
   height: auto;
