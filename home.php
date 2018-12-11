@@ -30,7 +30,7 @@
 				<div class="main-container">
 					<div class="main">
 						<div class="about">
-							<img src="images/caregiver.jpg" />
+							<a href="about.php"><img src="images/caregiver.jpg" /></a>
 							<!--<iframe width="560" height="315" src="https://www.youtube.com/embed/hzJpwq7Pxlc" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 							-->
 						</div>
@@ -75,7 +75,7 @@
 
 						<div class="row" id="register">
 							<div class="register">
-								<a href="register.php">Sign Up</a>
+								<a href="register.php"><img src="images/button.png" /></a>
 							</div>
 						</div>
 
@@ -124,7 +124,7 @@
 
 						<div class="row" id="register">
 							<div class="register">
-								<a href="register.php">Sign Up</a>
+								<a href="register.php"><img src="images/button.png" /></a>
 							</div>
 						</div>
 
@@ -138,7 +138,7 @@
 			<a href="contact.php">Contact Us</a>
 			<a href="login.php">Login</a>
 			<br />
-			<a href="index.php">Findur.com</a><a href="#" target="_blank">cookie policy</a>
+			<a href="#" target="_blank">cookie policy</a>
 			<br />
 			<form method='post' action='process-newsletter.php'>
 				Sign up for our newsletter!

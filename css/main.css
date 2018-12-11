@@ -64,18 +64,28 @@ body {
   display: flex;
 }
 
+.register {
+  margin: auto;
+  padding: auto;
+}
+
 #testimonials{
   width: 85%;
   display: flex;
 }
 
-#register, #register a{
+#testimonials > img{
+  float:left;
+}
+
+#register a{
   width: 100%;
   font-size: 24px;
   margin: auto;
   text-align: center;
   text-decoration: none;
   color: #95D84C;
+  padding:auto;
 }
 
 #fieldset{
@@ -85,7 +95,18 @@ body {
 #submit{
   margin: 10px auto 10px auto;
 }
-
+.patient{
+  background-color: #FFFFFF;
+  width: 80%;
+  border: 1px solid black;
+  height: auto;
+  margin: 8px;
+  padding: 20px;
+  overflow: none;
+}
+.patient img{
+  max-width: 85%;
+}
 .about img{
   max-width: 1200px;
   height: auto;
@@ -144,6 +165,13 @@ body {
   text-align: center;
   margin: 8px;
   padding: 8px;
+}
+
+.info{
+  background-color: #FFFFFF;
+  width: 100%;
+  display: inline-block;
+  padding: 16px;
 }
 
 

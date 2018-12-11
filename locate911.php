@@ -61,8 +61,9 @@ $row = $stmt->fetch();
 
 				<p>PatientId: <?php echo($row["patientId"]); ?></p>
 				<input type="hidden" value="<?php echo($row["patientId"]); ?>" name="patientId"/>
-				<p>Lat: <?php echo($row["lat"]); ?></p>
-				<p>Lng: <?php echo($row["lng"]); ?></p>
+				<img src="images/map-paris.png">
+				<h1>Lat: <?php echo($row["lat"]); ?></h1>
+				<h1>Lng: <?php echo($row["lng"]); ?></h1>
 
 				<p><img src='images/<?php echo ($row["image"]); ?>'></p>
 				<p>First Name: <input type='text' name='firstName' value="<?php echo($row["firstName"]); ?>"/></p>
@@ -93,7 +94,7 @@ $row = $stmt->fetch();
 			<a href="contact.php">Contact Us</a>
 			<a href="login.php">Login</a>
 			<br />
-			<a href="index.php">Findur.com</a><a href="cookiepolicy.html" target="_blank">cookie policy</a>
+			<a href="#" target="_blank">cookie policy</a>
 			<br />
 			<form method='post' action='process-newsletter.php'>
 				Sign up for our newsletter!
