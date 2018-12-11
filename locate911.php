@@ -54,39 +54,45 @@ $row = $stmt->fetch();
 
 <!-- BODY GOES HERE -->
 
-		<body>
-			<h1>Missing Persons Report</h1><br>
-			<p><h2> Last Known GPS co-ordinates</h2></p>
-			<form action="confirm-update.php" method="POST">
+		<body> 
+			<div class="main-container">
+				<div class="main">
+					<div class="patient">
+						<h1>Missing Persons Report</h1><br>
+						<p><h2> Last Known GPS co-ordinates</h2></p>
+						<form action="confirm-update.php" method="POST">
 
-				<p>PatientId: <?php echo($row["patientId"]); ?></p>
-				<input type="hidden" value="<?php echo($row["patientId"]); ?>" name="patientId"/>
-				<img src="images/map-paris.png">
-				<h1>Lat: <?php echo($row["lat"]); ?></h1>
-				<h1>Lng: <?php echo($row["lng"]); ?></h1>
+						<p>PatientId: <?php echo($row["patientId"]); ?></p>
+						<input type="hidden" value="<?php echo($row["patientId"]); ?>" name="patientId"/>
+						<img src="images/map-paris.png">
+						<h1>Lat: <?php echo($row["lat"]); ?></h1>
+						<h1>Lng: <?php echo($row["lng"]); ?></h1>
 
-				<p><img src='images/<?php echo ($row["image"]); ?>'></p>
-				<p>First Name: <input type='text' name='firstName' value="<?php echo($row["firstName"]); ?>"/></p>
-				<p>Last Name: <input type='text' name='lastName' value="<?php echo($row["lastName"]); ?>"/></p>
-				<p>Age: <input type='text' name='age' value="<?php echo($row["age"]); ?>"/></p>
-				<p>Height: <input type='text' name='height' value="<?php echo($row["height"]); ?>"/></p>
-				<p>Weight: <input type='text' name='weight' value="<?php echo($row["weight"]); ?>"/></p>
-				<p>Eye Color: <input type='text' name='eyeColor' value="<?php echo($row["eyeColor"]); ?>"/></p>
-				<p>Hair Color: <input type='text' name='hairColor' value="<?php echo($row["hairColor"]); ?>"/></p>
-				<p>Illnesses:</p><textarea rows="4" cols="50"><?php echo($row["illness"]); ?></textarea>
-				<p>Doctor: <input type='text' name='doctorName' value="<?php echo($row["doctorName"]); ?>"/></p>
-				<p>Doctor No: <input type='text' name='doctorPhone' value="<?php echo($row["doctorPhone"]); ?>"/></p>
-				<p>Emergency Contact: <input type='text' name='emergencyContact' value="<?php echo($row["emergencyContact"]); ?>"/></p>
-				<p>Emergency Phone: <input type='text' name='emergencyNo' value="<?php echo($row["emergencyNo"]); ?>"/></p>
-				<input type='submit'/>
-			</form>
+						<p><img src='images/<?php echo ($row["image"]); ?>'></p>
+						<p>First Name: <input type='text' name='firstName' value="<?php echo($row["firstName"]); ?>"/></p>
+						<p>Last Name: <input type='text' name='lastName' value="<?php echo($row["lastName"]); ?>"/></p>
+						<p>Age: <input type='text' name='age' value="<?php echo($row["age"]); ?>"/></p>
+						<p>Height: <input type='text' name='height' value="<?php echo($row["height"]); ?>"/></p>
+						<p>Weight: <input type='text' name='weight' value="<?php echo($row["weight"]); ?>"/></p>
+						<p>Eye Color: <input type='text' name='eyeColor' value="<?php echo($row["eyeColor"]); ?>"/></p>
+						<p>Hair Color: <input type='text' name='hairColor' value="<?php echo($row["hairColor"]); ?>"/></p>
+						<p>Illnesses:</p><textarea rows="4" cols="50"><?php echo($row["illness"]); ?></textarea>
+						<p>Doctor: <input type='text' name='doctorName' value="<?php echo($row["doctorName"]); ?>"/></p>
+						<p>Doctor No: <input type='text' name='doctorPhone' value="<?php echo($row["doctorPhone"]); ?>"/></p>
+						<p>Emergency Contact: <input type='text' name='emergencyContact' value="<?php echo($row["emergencyContact"]); ?>"/></p>
+						<p>Emergency Phone: <input type='text' name='emergencyNo' value="<?php echo($row["emergencyNo"]); ?>"/></p>
+						<input type='submit'/>
+					</form>
 
-			<div id = "map"></div>
-			<?php
-			}
-			?>
-			<script src="js/findurMap.js"></script>
-			<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDPpk0rmzNDhi1IlHizFNR5AtyHp6zDUG8&callback=initMap" async defer></script>
+					<div id = "map"></div>
+					<?php
+					}
+					?>
+					<script src="js/findurMap.js"></script>
+					<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDPpk0rmzNDhi1IlHizFNR5AtyHp6zDUG8&callback=initMap" async defer></script>
+				</div>
+				</div>
+			</div>
 		</body>
 
 <!-- FOOTER GOES HERE -->
