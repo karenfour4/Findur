@@ -8,7 +8,19 @@
             DBlUE : 002361
 
 ============================================*/
+/*
+@media screen and (max-width: 75%){
+    body{
+        width: 50%;
+    }
+}
 
+@media screen and (max-width: 25%){
+    body {
+        width: 100%;
+    }
+}
+*/
 
 body {
   background-color: #FFFFFF;
@@ -50,18 +62,21 @@ body {
   display: flex;
   margin: auto;
   max-width: 1200px;
+  min-width: 25%;
   background-color: #EEEEEE;
 }
 
 .main{
   height: auto;
   padding: 16px 0px 16px 0px;
+  flex-direction: row;
 }
 
 .row{
   padding: 16px;
   margin: auto;
   display: flex;
+  flex-wrap: row;
 }
 
 .register {
@@ -70,16 +85,31 @@ body {
 }
 
 #testimonials{
-  width: 85%;
+  max-width: 85%;
   display: flex;
 }
 
 #testimonials > img{
   float:left;
+  max-width: 100%;
+  min-width: 25%;
+}
+
+#features{
+  display: flex;
+  max-width: 100%;
+  min-width: 25%;
+  flex-direction: row;
+}
+
+#price{
+  display: flex;
+  max-width: 100%;
+  min-width: 25%;
 }
 
 #register a{
-  width: 100%;
+  max-width: 100%;
   font-size: 24px;
   margin: auto;
   text-align: center;
@@ -95,9 +125,22 @@ body {
 #submit{
   margin: 10px auto 10px auto;
 }
-
+.patient{
+  background-color: #FFFFFF;
+  max-width: 80%;
+  border: 1px solid black;
+  height: auto;
+  margin: 8px;
+  padding: 20px;
+  overflow: none;
+}
+.patient img{
+  max-width: 85%;
+}
 .about img{
-  max-width: 1200px;
+  width: 1200px;
+  max-width:100%;
+  min-width: 25%;
   height: auto;
 }
 
@@ -106,7 +149,7 @@ body {
   margin: 0px 16px 0px 16px;
   padding: 16px;
   background-color: #FFFFFF;
-  display: inline-block;
+  display: flex;
 }
 
 #fieldset >input{
@@ -116,13 +159,13 @@ body {
 .feature{
   overflow: auto;
   background-color: #FFFFFF;
-  width: 33%;
+  max-width: 33%;
+  min-width: 25%;
   border: 1px solid black;
   height: auto;
   text-align: center;
   margin: 8px;
   padding: 8px;
-  flex-direction: row;
 }
 
 .testimonial{
@@ -130,7 +173,7 @@ body {
   font-size: 1.5rem;
   font-style: italic;
   font-family: serif;
-  width: 100%;
+  max-width: 100%;
   display: inline-block;
   padding: 16px;
 }
@@ -149,6 +192,7 @@ body {
 .pricing{
   background-color: #FFFFFF;
   width: 33%;
+  max-width: 100%;
   border: 1px solid black;
   height: auto;
   text-align: center;

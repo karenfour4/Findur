@@ -42,7 +42,8 @@ $pdo = new PDO($dsn, $dbusername, $dbpassword);
 
 <!-- BODY GOES HERE -->
 		<body>
-			<div class="bodyContent">
+			<div class="main-container">
+				<div class="main">
 				<div id="map" lat="48.8587741" lng="2.2069771"></div>
 				<input id="get_location" type="button" name="Get_location!" value="get_location" />
 				<input id="Emergency_Btn" type="button" name="Emergency_Btn" value="911" />
@@ -50,6 +51,8 @@ $pdo = new PDO($dsn, $dbusername, $dbpassword);
 
 			<script src="js/findurMap.js"></script>
 			<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDPpk0rmzNDhi1IlHizFNR5AtyHp6zDUG8&callback=initMap" async defer></script>
+</div>
+</div>
 		</body>
 
 
