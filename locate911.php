@@ -54,7 +54,7 @@ $row = $stmt->fetch();
 
 <!-- BODY GOES HERE -->
 
-		<body> 
+		<body>
 			<div class="main-container">
 				<div class="main">
 					<div class="patient">
@@ -64,7 +64,7 @@ $row = $stmt->fetch();
 
 						<p>PatientId: <?php echo($row["patientId"]); ?></p>
 						<input type="hidden" value="<?php echo($row["patientId"]); ?>" name="patientId"/>
-						<img src="images/map-paris.png">
+						<img src="images/map-paris.png" width="972" height="332">
 						<h1>Lat: <?php echo($row["lat"]); ?></h1>
 						<h1>Lng: <?php echo($row["lng"]); ?></h1>
 

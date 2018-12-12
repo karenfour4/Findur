@@ -27,7 +27,7 @@ if($row = $stmt->fetch()){
 
 	if (($_SESSION['role'] == 2) || ($_SESSION['role'] == 3)){
 
-	header("Location: index.php");
+	header("Location: home.php");
 
 	}else{
 
