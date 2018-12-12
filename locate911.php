@@ -64,7 +64,9 @@ $row = $stmt->fetch();
 
 						<p>PatientId: <?php echo($row["patientId"]); ?></p>
 						<input type="hidden" value="<?php echo($row["patientId"]); ?>" name="patientId"/>
-						<img src="images/map-paris.png" width="972" height="332">
+
+						<!-- <img src="images/map-paris.png" width="972" height="332" /> -->
+
 						<h1>Lat: <?php echo($row["lat"]); ?></h1>
 						<h1>Lng: <?php echo($row["lng"]); ?></h1>
 
@@ -89,7 +91,7 @@ $row = $stmt->fetch();
 					}
 					?>
 					<script src="js/findurMap.js"></script>
-					<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDPpk0rmzNDhi1IlHizFNR5AtyHp6zDUG8&callback=initMap" async defer></script>
+					<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyD_CKxaCD-yHMebOwOgUiq06uIrkS-L3W8&callback=initMap" async defer></script>
 				</div>
 				</div>
 			</div>

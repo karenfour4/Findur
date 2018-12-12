@@ -24,7 +24,8 @@ function initMap() {
 		'<h1 id="firstHeading" class="firstHeading">Hooray!</h1>'+
 		'<div id="bodyContent">'+
 			'<p><b>Your location</b> was now <b>found.</b></p>' +
-			'<p><b>Location:</b> "<?php echo($row["pos"]); ?>"</p>' +
+			'<p><b>latitude:</b> "<?php echo($row["lat"]); ?>"</p>' +
+			'<p><b>longitude:</b> "<?php echo($row["lng"]); ?>"</p>' +
 		'</div>'+
 		'</div>';
 
