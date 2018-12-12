@@ -33,7 +33,8 @@ $row = $stmt->fetch();
 		<head>
 			<title>Findur : Home</title>
 			<meta charset="utf-8" />
-			<link rel="stylesheet" type="text/css" href="css/main.css" media="all">
+				<link rel="stylesheet" href="css/k4.css">
+				<link rel="stylesheet" type="text/css" href="css/main.css" media="all">
 		</head>
 
 <!-- HEADER GOES HERE -->
@@ -60,14 +61,23 @@ $row = $stmt->fetch();
 					<div class="patient">
 						<h1>Missing Persons Report</h1><br>
 						<p><h2> Last Known GPS co-ordinates</h2></p>
+
+
+						<div id="map"></div>
+					<!-- Replace the value of the key parameter with your own API key. -->
+					<script async defer
+					src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAZVKOWahYNsMXGrsSPjvxReuRWL8cvt5Q&libraries=drawing&callback=initMap">
+					</script>
+					<script src="js/js-k4.js"></script>
+
 						<form action="confirm-update.php" method="POST">
 
 						<p>PatientId: <?php echo($row["patientId"]); ?></p>
 						<input type="hidden" value="<?php echo($row["patientId"]); ?>" name="patientId"/>
-						<img src="images/map-paris.png" width="972" height="332">
+
 						<h1>Lat: <?php echo($row["lat"]); ?></h1>
 						<h1>Lng: <?php echo($row["lng"]); ?></h1>
-
+						
 						<p><img src='images/<?php echo ($row["image"]); ?>'></p>
 						<p>First Name: <input type='text' name='firstName' value="<?php echo($row["firstName"]); ?>"/></p>
 						<p>Last Name: <input type='text' name='lastName' value="<?php echo($row["lastName"]); ?>"/></p>
@@ -84,16 +94,15 @@ $row = $stmt->fetch();
 						<input type='submit'/>
 					</form>
 
-					<div id = "map"></div>
 					<?php
 					}
 					?>
-					<script src="js/findurMap.js"></script>
-					<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDPpk0rmzNDhi1IlHizFNR5AtyHp6zDUG8&callback=initMap" async defer></script>
+
 				</div>
 				</div>
 			</div>
-		</body>
+
+
 
 <!-- FOOTER GOES HERE -->
 		<div class="footer">
