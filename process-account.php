@@ -22,7 +22,7 @@ $dbpassword = "Rejane@2608";
 
 $pdo = new PDO($dsn, $dbusername, $dbpassword);
 
-$stmt = $pdo->prepare("UPDATE `users` SET `profilePic` = '$profilePic', `firstName` = '$firstName', `lastName` = '$lastName', `phone` = '$phone',`email` = '$email',`password` = '$password' WHERE `userId`.`userId` = $userId;");
+$stmt = $pdo->prepare("UPDATE `users` SET `profilePic` = '$profilePic', `firstName` = '$firstName', `lastName` = '$lastName', `phone` = '$phone',`email` = '$email',`password` = '$password' WHERE `users`.`userId` = $userId;");
 
 $stmt->execute();
 
